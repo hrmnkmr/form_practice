@@ -61,7 +61,7 @@ button {
   color: #e40000;
 }
 
-.select-none,.textbox {
+.input__area,.textbox {
   width: 100%;
   height: 35px;
   margin-top: 6px;
@@ -73,9 +73,7 @@ button {
   user-select: none;
 }
 
-.textbox{
-  user-select: text;
-}
+
 
 .label-text {
   font-size: 14px;
