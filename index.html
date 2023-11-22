@@ -23,30 +23,30 @@
           <h3 class="thirdtitle">個人情報</h3>
           <div class="personalinformation">
             <!--   名字 -->
-            <label class="label-text">名字
+            <label class="label__text" for="family__name">名字
               <span class="required">※</span>
-              <input class="input__area" id="family__name" type="text" name="name" autocomplete="family-name" required>
             </label>
+              <input class="input__area" id="family__name" type="text" name="name" autocomplete="family-name" required>
           </div>
           <!--   名字ここまで -->
 
           <!--   名前 -->
           <div class="personalinformation">
-            <label class="label-text">名前
+            <label class="label__text" for="given__name">名前
               <span class="required">※</span>
-              <input class="input__area" id="given__name" type="text" name="name" autocomplete="given-name" required>
             </label>
+              <input class="input__area" id="given__name" type="text" name="name" autocomplete="given-name" required>
           </div>
           <!--   名前ここまで -->
 
           <!--   生年月日 -->
           <div class="personalinformation">
-            <label class="label-text">生年月日
+            <label class="label__text">生年月日
               <span class="required">※</span>
             </label>
             <div class="pulldown flexbox">
               <div class="box">
-                <select class="pulldownarea" name="year">
+                <select class="pulldown__area" name="year">
                   <option value="" hidden>年</option>
                   <option value="1">2000</option>
                   <option value="2">2001</option>
@@ -62,7 +62,7 @@
                 </select>
               </div>
               <div class="box">
-                <select class="pulldownarea" name="month">
+                <select class="pulldown__area" name="month">
                   <option value="" hidden>月</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -79,7 +79,7 @@
                 </select>
               </div>
               <div class="box">
-                <select class="pulldownarea" name="day">
+                <select class="pulldown__area" name="day">
                   <option value="" hidden>日</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -99,7 +99,7 @@
 
           <!--   性別 -->
           <div class="personalinformation">
-            <label class="label-text">性別
+            <label class="label__text">性別
               <span class="required">※</span>
             </p>
             <div class="sentaku">
@@ -124,10 +124,10 @@
 
           <!--   職業 -->
           <div class="label">
-            <label class="label-text">職業</label>
+            <label class="label__text">職業</label>
             <div class="pulldown flexbox">
               <div class="box">
-            <select class="pulldownarea" name="profession">
+            <select class="pulldown__area" name="profession">
               <option value hidden>選択してください</option>
               <option value="1">学生</option>
               <option value="2">会社員</option>
@@ -144,28 +144,28 @@
       <div class="label">
         <h3 class="thirdtitle">アカウント情報</h3>
         <div class="label">
-          <label class="label-text">アカウント名
+          <label class="label__text" for="account__name">アカウント名
             <span class="required">※</span>
-            <input type="text" name="check-password" class="textbox"></input>
           </label>
+            <input type="text" name="account__name" class="textbox"></input>
         </div>
         <div class="label">
-          <label class="label-text">メールアドレス
+          <label class="label__text" for="email">メールアドレス
             <span class="required">※</span>
-            <input type="text" name="check-password" class="textbox"></input>
           </label>
+            <input type="text" name="email" class="textbox"></input>
         </div>
         <div class="label">
-          <label class="label-text">パスワード
+          <label class="label__text" for="password">パスワード
             <span class="required">※</span>
-            <input type="text" name="check-password" class="textbox"></input>
           </label>
+            <input type="text" name="password" class="textbox"></input>
         </div>
         <div class="label">
-          <label class="label-text">確認用パスワード
+          <label class="label__text" for="duplication__password">確認用パスワード
             <span class="required">※</span>
-            <input type="text" name="check-password" class="textbox"></input>
           </label>
+            <input type="text" name="duplication__password" class="textbox"></input>
         </div>
         <!--   アカウント情報ここまで -->
 
@@ -173,13 +173,13 @@
         <div class="contactaddress">
           <h3 class="thirdtitle">連絡先</h3>
           <div class="label">
-            <label class="label-text">住所
+            <label class="label__text">住所
               <span class="required">※</span>
             </label>
             <input class="input__area" id="address" type="text" required>
           </div>
           <div class="label">
-            <label class="label-text">電話番号
+            <label class="label__text">電話番号
               <span class="required">※</span>
             </label>
             <input class="input__area" id="tel" type="tel" autocomplete="tel" required>
@@ -192,11 +192,11 @@
           <h3 class="thirdtitle">購読情報</h3>
           <div class="label">
             <input type="checkbox" name="subscription" value="email--magazine" id="email-magazine" required></input>
-            <label class="label-text subscriptionlabel" for="email-magazine">メールマガジン</label>
+            <label class="label__text subscriptionlabel" for="email-magazine">メールマガジン</label>
           </div>
           <div class="label">
             <input type="checkbox" name="subscription" value="coupon" id="coupon" required></input>
-            <label class="label-text subscriptionlabel" for="coupon">クーポン</label>
+            <label class="label__text subscriptionlabel" for="coupon">クーポン</label>
           </div>
 
         </div>
