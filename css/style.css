@@ -42,7 +42,8 @@ button {
 .account,
 .contactaddress,
 .subscription,
-.createaccount {
+.createaccount,
+.account {
   margin-top: 50px;
 }
 

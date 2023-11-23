@@ -18,6 +18,7 @@
     <div class="inner">
       <h1 class="maintitle">フォーム作成</h1>
       <div class="wholeform">
+        <form action="">
         <h2 class="secondtitle">アカウント作成</h2>
         <div class="account">
           <h3 class="thirdtitle">個人情報</h3>
@@ -141,45 +142,46 @@
       <!--   職業ここまで -->
 
       <!--   アカウント情報 -->
-      <div class="label">
+      <div class="account">
         <h3 class="thirdtitle">アカウント情報</h3>
         <div class="label">
           <label class="label__text" for="account__name">アカウント名
             <span class="required">※</span>
           </label>
-            <input type="text" name="account__name" class="textbox"></input>
+          <input class="input__area" id="account__name" type="text" required>
         </div>
         <div class="label">
           <label class="label__text" for="email">メールアドレス
             <span class="required">※</span>
           </label>
-            <input type="text" name="email" class="textbox"></input>
+          <input class="input__area" id="email" type="email" autocomplete="email" required>
         </div>
         <div class="label">
           <label class="label__text" for="password">パスワード
             <span class="required">※</span>
           </label>
-            <input type="text" name="password" class="textbox"></input>
+          <input class="input__area" id="password" type="password" required>
         </div>
         <div class="label">
           <label class="label__text" for="duplication__password">確認用パスワード
             <span class="required">※</span>
           </label>
-            <input type="text" name="duplication__password" class="textbox"></input>
+          <input class="input__area" id="duplication__password" type="password" required>
         </div>
+      </div>
         <!--   アカウント情報ここまで -->
 
         <!--   連絡先 -->
         <div class="contactaddress">
           <h3 class="thirdtitle">連絡先</h3>
           <div class="label">
-            <label class="label__text">住所
+            <label class="label__text" for="address">住所
               <span class="required">※</span>
             </label>
             <input class="input__area" id="address" type="text" required>
           </div>
           <div class="label">
-            <label class="label__text">電話番号
+            <label class="label__text" for="tel">電話番号
               <span class="required">※</span>
             </label>
             <input class="input__area" id="tel" type="tel" autocomplete="tel" required>
@@ -191,11 +193,11 @@
         <div class="subscription">
           <h3 class="thirdtitle">購読情報</h3>
           <div class="label">
-            <input type="checkbox" name="subscription" value="email--magazine" id="email-magazine" required></input>
+            <input type="checkbox" name="subscription" value="email--magazine" id="email-magazine">
             <label class="label__text subscriptionlabel" for="email-magazine">メールマガジン</label>
           </div>
           <div class="label">
-            <input type="checkbox" name="subscription" value="coupon" id="coupon" required></input>
+            <input class="subscription__checkbox" type="checkbox" name="subscription" value="coupon" id="coupon">
             <label class="label__text subscriptionlabel" for="coupon">クーポン</label>
           </div>
 
@@ -204,15 +206,17 @@
 
         <!--   アカウント作成 -->
         <div class="createaccount">
-          <button class="btn btn-blue">アカウント作成</button>
+          <button class="btn btn-blue" type="blue">アカウント作成</button>
           <p class="finaltext">アカウントを作成することにより、<a class="wordcolor" href="#">利用規約</a>と<a class="wordcolor" href="#">プライバシーポリシー</a>に同意するものとします。
           </p>
         </div>
         <!--   アカウント作成ここまで -->
+        </form>
       </div>
 
 
     </div>
+  </section>
 
 
 </body>
